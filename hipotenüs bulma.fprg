@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-01 09:56:43 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswOTo1MTowMCDDllM7MzIyNw=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswOTo1Njo0MyDDllM7MzszMzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, hipoten&#252;s" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci Kenar&#305; Giriniz:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#304;kinci Kenar&#305; Giriniz:&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="hipoten&#252;s" expression="sqrt(a*a+b*b)"/>
+            <output expression="&quot;Hipoten&#252;s=&quot;&amp;hipoten&#252;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
