@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-01 08:48:46 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswODo0MToxMyDDllM7MzIyOQ=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswODo0ODo0NiDDllM7MzszMzUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kenar1" type="Integer" array="False" size=""/>
+            <declare name="kenar2" type="Integer" array="False" size=""/>
+            <declare name="alan" type="Integer" array="False" size=""/>
+            <declare name="cevre" type="Integer" array="False" size=""/>
+            <output expression="&quot;kenar uzunlu&#287;u giriniz&quot;" newline="True"/>
+            <input variable="kenar1"/>
+            <output expression="&quot;kenar uzunlu&#287;u giriniz&quot;" newline="True"/>
+            <input variable="kenar2"/>
+            <assign variable="cevre" expression="(kenar1+kenar2)*2"/>
+            <output expression="&quot;dikd&#246;rtgenin &#231;evresi=&quot;&amp;cevre" newline="True"/>
+            <assign variable="alan" expression="kenar1*kenar2"/>
+            <output expression="&quot;dikd&#246;rtgenin alan&#305;=&quot;&amp;alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

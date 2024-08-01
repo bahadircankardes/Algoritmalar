@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-01 09:20:03 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswODo0ODo0OSDDllM7MzI0NQ=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMTswOToyMDowMyDDllM7NDszMzM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat" type="Real" array="False" size=""/>
+            <declare name="kdv" type="Real" array="False" size=""/>
+            <declare name="kdvlifiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;fiyat giriniz&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <assign variable="kdv" expression="(fiyat*20)/100"/>
+            <output expression="&quot;Girilen Fiyat&#305;n %20 KDV'si=&quot;&amp;kdv" newline="True"/>
+            <assign variable="kdvlifiyat" expression="kdv+fiyat"/>
+            <output expression="&quot;Girilen fiyata %20 KDV dahil Toplam=&quot;&amp;kdvlifiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
