@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 12:04:27 &#214;&#214;"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMjsxMToyNDo1OCDDllM7MzIzNA=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMjowNDoyNyDDlsOWOzM7MzQ3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sicakl&#305;k" type="Real" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen bir S&#305;cakl&#305;k De&#287;eri Giriniz:&quot;" newline="True"/>
+            <input variable="sicakl&#305;k"/>
+            <if expression="sicakl&#305;k&gt;=0">
+                <then>
+                    <if expression="sicakl&#305;k&gt;=100">
+                        <then>
+                            <output expression="&quot;madde gaz halindedir.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;madde s&#305;v&#305; halindedir.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;madde kat&#305; haldedir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
