@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 02:31:46 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzswMjoxMzoyNCDDllM7MzIyNg=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzswMjozMTo0NiDDllM7MTszMzM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <do expression="sayac&lt;=10">
+                <output expression="&quot;Say&#305;:&quot;&amp;sayac" newline="True"/>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

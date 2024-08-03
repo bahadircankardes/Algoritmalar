@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 02:13:14 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzswMjowOToxMyDDllM7MzIyOQ=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzswMjoxMzoxNCDDllM7MjszMzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="Random(50)+1"/>
+        </body>
+    </function>
+</flowgorithm>
