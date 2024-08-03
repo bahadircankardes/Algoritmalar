@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 10:05:34 &#214;&#214;"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzswOTo0NTowMiDDlsOWOzMzNjU="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMDowNTozNCDDlsOWOzM7MzQ2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ort" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize Notunuzu Girinizi:&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Notunuzu Girinizi:&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ort" expression="(vize*0.3)+(final*0.7)"/>
+            <output expression="&quot;Not Ortalaman&#305;z:&quot; &amp;ort" newline="True"/>
+            <if expression="ort&gt;50">
+                <then>
+                    <output expression="&quot;Ge&#231;ti&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;kald&#305;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 10:37:37 &#214;&#214;"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMDoxMzoxOCDDlsOWOzMzNTk="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMDozNzozNyDDlsOWOzM7MzQ3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ay" type="String" array="False" size=""/>
+            <output expression="&quot;Bir ay ad&#305; giriniz:&quot;" newline="True"/>
+            <input variable="ay"/>
+            <if expression="ay=&quot;aral&#305;k&quot; || ay=&quot;ocak&quot; || ay=&quot;&#351;ubat&quot;">
+                <then>
+                    <output expression="&quot;Mevsim: K&#305;&#351;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ay=&quot;mart&quot; || ay=&quot;nisan&quot; || ay=&quot;may&#305;s&quot;">
+                        <then>
+                            <output expression="&quot;Mevsim: ilkbahar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ay=&quot;haziran&quot; || ay=&quot;temmuz&quot; || ay=&quot;a&#287;ustos&quot;">
+                                <then>
+                                    <output expression="&quot;Mevsim: yaz&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ay=&quot;eyl&#252;l&quot; || ay=&quot;ekim&quot; || ay=&quot;kas&#305;m&quot;">
+                                        <then>
+                                            <output expression="&quot;Mevsim: sonbahar&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;yanl&#305;&#351; giri&#351; yapt&#305;n&#305;z. ay isimlerini k&#252;&#231;&#252;k harfle yaz&#305;n&#305;z.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
