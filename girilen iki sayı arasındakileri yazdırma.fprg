@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 12:05:06 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMToyNTo1MiDDlsOWOzMzNjE="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlczsxOTI7MjAyNC0wOC0wMzsxMjowNTowNiDDllM7MzszMzM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci Say&#305;:&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci Say&#305;:&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1=sayi2">
+                <then>
+                    <output expression="&quot;girilen say&#305;lar e&#351;ittir.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sayi1&gt;sayi2">
+                <then>
+                    <while expression="sayi2&lt;sayi1-1">
+                        <assign variable="sayi2" expression="sayi2+1"/>
+                        <output expression="&quot;Say&#305;:&quot;&amp;sayi2" newline="True"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="sayi1&lt;sayi2-1">
+                        <assign variable="sayi1" expression="sayi1+1"/>
+                        <output expression="&quot;Say&#305;:&quot;&amp;sayi1" newline="True"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
