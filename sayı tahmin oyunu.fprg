@@ -4,14 +4,14 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="bahadircankardes"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-04 11:14:50 &#214;&#214;"/>
+        <attribute name="saved" value="2024-08-04 11:42:39 &#214;&#214;"/>
         <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMDo0NDowOCDDlsOWOzQyMjM="/>
-        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMToxNDo1MCDDlsOWOzE7NDMyNg=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMTo0MjozOSDDlsOWOzI7NDMzNQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="tahminhakk&#305;, sayi, tahmin" type="Integer" array="False" size=""/>
+            <declare name="tahminhakk&#305;, sayi, tahmin, devam" type="Integer" array="False" size=""/>
             <assign variable="sayi" expression="Random(50)+1"/>
             <assign variable="tahminhakk&#305;" expression="5"/>
             <while expression="tahminhakk&#305;&gt;0">

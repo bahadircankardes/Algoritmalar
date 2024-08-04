@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 12:08:41 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMTo1NTo1NiDDlsOWOzQyMjk="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMjowODo0MSDDllM7Mjs0MjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sayac" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz:&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;Bir say&#305; daha giriniz:&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1&gt;sayi2">
+                <then>
+                    <for variable="sayac" start="sayi2+1" end="sayi1-1" direction="inc" step="1">
+                        <output expression="&quot;Say&#305;:&quot;&amp;sayac" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <if expression="sayi1&lt;sayi2">
+                        <then>
+                            <for variable="sayac" start="sayi1+1" end="sayi2-1" direction="inc" step="1">
+                                <output expression="&quot;Say&#305;:&quot;&amp;sayac" newline="True"/>
+                            </for>
+                        </then>
+                        <else>
+                            <output expression="&quot;Her iki say&#305; da e&#351;it&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
