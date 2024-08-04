@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 01:01:52 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMjo1NTo0MiDDllM7NDA5NA=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDswMTowMTo1MiDDllM7MTs0MTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elemansayisi, sayac" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="elemansayisi"/>
+            <declare name="sayilar" type="Integer" array="True" size="elemansayisi"/>
+            <for variable="sayac" start="0" end="elemansayisi-1" direction="inc" step="1">
+                <assign variable="sayilar[sayac]" expression="Random(100)+1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
