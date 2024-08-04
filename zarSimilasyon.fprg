@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BRIGHT"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 02:27:39 &#214;S"/>
+        <attribute name="created" value="QlJJR0hUO0RFU0tUT1AtTEhWNUZKMjsyMDI0LTA4LTAzOzAyOjA5OjA1IMOWUzsyOTMx"/>
+        <attribute name="edited" value="QlJJR0hUO0RFU0tUT1AtTEhWNUZKMjsyMDI0LTA4LTAzOzAyOjI3OjM5IMOWUzsxOzMwNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, yaziSayisi, turaSayisi, denemeSayisi" type="Integer" array="False" size=""/>
+            <declare name="turaOlasilik, yaziOlasilik" type="Real" array="False" size=""/>
+            <assign variable="denemeSayisi" expression="100000"/>
+            <assign variable="yaziSayisi" expression="0"/>
+            <assign variable="turaSayisi" expression="0"/>
+            <assign variable="sayac" expression="1"/>
+            <while expression="sayac&lt;=denemeSayisi">
+                <assign variable="sayi" expression="Random(100)"/>
+                <if expression="sayi%2=0">
+                    <then>
+                        <assign variable="yaziSayisi" expression="yaziSayisi+1"/>
+                    </then>
+                    <else>
+                        <assign variable="turaSayisi" expression="turaSayisi+1"/>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac +1"/>
+            </while>
+            <assign variable="turaOlasilik" expression="turaSayisi/denemeSayisi"/>
+            <assign variable="yaziOlasilik" expression="yazisayisi/denemeSayisi"/>
+            <output expression="&quot;Tura olasiligi &quot; &amp;turaOlasilik" newline="True"/>
+            <output expression="&quot;Yazi olasiligi &quot; &amp;yaziOlasilik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

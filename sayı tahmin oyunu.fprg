@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 11:14:50 &#214;&#214;"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMDo0NDowOCDDlsOWOzQyMjM="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNDsxMToxNDo1MCDDlsOWOzE7NDMyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahminhakk&#305;, sayi, tahmin" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="Random(50)+1"/>
+            <assign variable="tahminhakk&#305;" expression="5"/>
+            <while expression="tahminhakk&#305;&gt;0">
+                <output expression="&quot;Tutulan say&#305;y&#305; tahmin ediniz:&quot;" newline="True"/>
+                <input variable="tahmin"/>
+                <if expression="sayi&lt;tahmin">
+                    <then>
+                        <output expression="&quot;k&#252;&#231;&#252;k say&#305; girin.&quot;" newline="True"/>
+                        <assign variable="tahminhakk&#305;" expression="tahminhakk&#305;-1"/>
+                        <output expression="&quot;Tahmin Hakk&#305;:&quot;&amp;tahminhakk&#305;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="sayi&gt;tahmin">
+                            <then>
+                                <output expression="&quot;b&#252;y&#252;k say&#305; girin.&quot;" newline="True"/>
+                                <assign variable="tahminhakk&#305;" expression="tahminhakk&#305;-1"/>
+                                <output expression="&quot;Tahmin Hakk&#305;:&quot;&amp;tahminhakk&#305;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Tebrikler say&#305;y&#305; bildiniz. Kalan Tahmin Hakk&#305;:&quot;&amp;tahminhakk&#305;" newline="True"/>
+                                <assign variable="tahminhakk&#305;" expression="0"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
