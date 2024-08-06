@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 04:11:39 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswMToxMTowMyDDllM7NDA4Mw=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswNDoxMTozOSDDllM7Mzs0MjA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elemansayisi, sayac, buyuk, kucuk, sayac2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="elemansayisi"/>
+            <declare name="sayilar" type="Integer" array="True" size="elemansayisi"/>
+            <assign variable="buyuk" expression="0"/>
+            <for variable="sayac" start="0" end="elemansayisi-1" direction="inc" step="1">
+                <assign variable="sayilar[sayac]" expression="Random(100)-1"/>
+                <output expression="&quot;Say&#305; &quot; &amp;sayac+1&amp;&quot;:&quot;&amp;sayilar[sayac]" newline="True"/>
+            </for>
+            <for variable="sayac2" start="0" end="elemansayisi-1" direction="inc" step="1">
+                <if expression="buyuk&lt;sayilar[sayac2]">
+                    <then>
+                        <assign variable="buyuk" expression="sayilar[sayac2]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;B&#252;y&#252;k Say&#305;:&quot;&amp;buyuk" newline="True"/>
+            <assign variable="kucuk" expression="buyuk"/>
+            <for variable="sayac2" start="0" end="elemansayisi-1" direction="inc" step="1">
+                <if expression="kucuk&gt;sayilar[sayac2]">
+                    <then>
+                        <assign variable="kucuk" expression="sayilar[sayac2]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;K&#252;&#231;&#252;k Say&#305;:&quot;&amp;kucuk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
