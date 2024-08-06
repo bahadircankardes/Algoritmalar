@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="bahadircankardes"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-06 05:32:43 &#214;S"/>
+        <attribute name="saved" value="2024-08-06 08:06:46 &#214;S"/>
         <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswNTowNjo0OSDDllM7NDEwMQ=="/>
-        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswNTozMjo0MyDDllM7MTs0MjAy"/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODowNjo0NiDDllM7Mjs0MjEw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,7 @@
             <declare name="elemansayisi, sayac, sayac2" type="Integer" array="False" size=""/>
             <output expression="&quot;fibonacci dizisinin eleman sayisini girniz: &quot;" newline="True"/>
             <input variable="elemansayisi"/>
-            <declare name="fibonacci" type="Integer" array="True" size="elemansayisi"/>
+            <declare name="fibonacci" type="Real" array="True" size="elemansayisi"/>
             <assign variable="fibonacci[0]" expression="1"/>
             <assign variable="fibonacci[1]" expression="1"/>
             <assign variable="sayac2" expression="0"/>
