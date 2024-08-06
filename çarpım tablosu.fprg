@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 08:28:23 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODoyMToyOCDDllM7NDA5OA=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODoyODoyMyDDllM7Mjs0MjA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac1, sayac2" type="Integer" array="False" size=""/>
+            <for variable="sayac1" start="1" end="9" direction="inc" step="1">
+                <for variable="sayac2" start="1" end="9" direction="inc" step="1">
+                    <output expression="&quot; &quot; &amp;sayac1  &amp;&quot;x&quot; &amp;sayac2&amp; &quot;=&quot; &amp;sayac1*sayac2" newline="True"/>
+                </for>
+                <output expression="&quot;***************************************************&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

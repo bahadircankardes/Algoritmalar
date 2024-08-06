@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 08:20:19 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODoxMjowMCDDllM7NDA4OA=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODoxMjowMyDDllM7MTtiYWhhZGlyY2Fua2FyZGVzO0JBSEFEUi1NQUNCT09LLTsyMDI0LTA4LTA2OzA1OjA2OjQ5IMOWUztmaWJvbmFjY2kgc2VyaXNpIGlsayAyMCBzYXlpeWkgYnVsbWEuZnByZzsxMjI0Nw=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNjswODoyMDoxOSDDllM7MTs0MjA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elemansayisi, sayac, sayac2" type="Integer" array="False" size=""/>
+            <output expression="&quot;tribonacci dizisinin eleman sayisini girniz: &quot;" newline="True"/>
+            <input variable="elemansayisi"/>
+            <declare name="tribonacci" type="Real" array="True" size="elemansayisi"/>
+            <assign variable="tribonacci[0]" expression="1"/>
+            <assign variable="tribonacci[1]" expression="1"/>
+            <assign variable="tribonacci[2]" expression="2"/>
+            <assign variable="sayac2" expression="0"/>
+            <for variable="sayac" start="3" end="elemansayisi-1" direction="inc" step="1">
+                <assign variable="tribonacci[sayac]" expression="tribonacci[sayac2]+tribonacci[sayac2+1]+tribonacci[sayac2+2]"/>
+                <assign variable="sayac2" expression="sayac2+1"/>
+            </for>
+            <for variable="sayac2" start="0" end="elemansayisi-1" direction="inc" step="1">
+                <output expression="&quot;Tribonacci Dizisinin &quot; &amp;sayac2+1 &amp;&quot;. Say&#305;s&#305;: &quot; &amp;tribonacci[sayac2]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
