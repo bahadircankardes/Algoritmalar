@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bahadircankardes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 02:18:02 &#214;S"/>
+        <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNzswMTo0MTo1MSDDllM7NDA5MA=="/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNzswMjoxODowMiDDllM7MTs0MTk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bakiye, yat&#305;r&#305;lacak, cekilecek" type="Real" array="False" size=""/>
+            <declare name="secim" type="String" array="False" size=""/>
+            <assign variable="bakiye" expression="1000"/>
+            <do expression="secim=&quot;Y&quot; || secim=&quot;y&quot; ||secim=&quot;C&quot;|| secim= &quot;c&quot;">
+                <output expression="&quot;Para Yat&#305;rmak i&#231;in -Y- veya -y-, para &#231;ekmek i&#231;in -C- veya -c- se&#231;imini yap&#305;n&#305;z.--C&#305;k&#305;s i&#231;in --E-- veya -e- giriniz&quot;" newline="True"/>
+                <input variable="secim"/>
+                <if expression="secim=&quot;C&quot;|| secim=&quot;c&quot;">
+                    <then>
+                        <output expression="&quot;Ne kadar &#231;ekmek istiyorsunuz?&quot;" newline="True"/>
+                        <input variable="cekilecek"/>
+                        <if expression="bakiye&lt;cekilecek">
+                            <then>
+                                <output expression="&quot;Yeterli Bakiyeniz bulunmamaktad&#305;r &#214;nce Para yat&#305;r&#305;n&#305;z. Bakiyeniz: &quot; &amp;bakiye" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;&#304;&#351;leminiz Yap&#305;l&#305;yor......L&#252;tfen Bekleyiniz......&quot;" newline="True"/>
+                                <assign variable="bakiye" expression="bakiye-cekilecek"/>
+                                <output expression="&quot;Kalan Bakiyeniz: &quot; &amp;bakiye" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="secim=&quot;Y&quot;|| secim=&quot;y&quot;">
+                            <then>
+                                <output expression="&quot;Ne kadar yat&#305;rmakistiyorsunuz?&quot;" newline="True"/>
+                                <input variable="yat&#305;r&#305;lacak"/>
+                                <assign variable="bakiye" expression="bakiye+yat&#305;r&#305;lacak"/>
+                                <output expression="&quot;Bakiyeniz: &quot;&amp;bakiye" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="secim=&quot;E&quot; || secim=&quot;e&quot;">
+                                    <then>
+                                        <output expression="&quot;&#304;yi g&#252;nler dileriz. Yine bekleriz. Bakiyeniz: &quot; &amp;bakiye" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Yanl&#305;&#351; se&#231;im yapt&#305;n&#305;z. Yat&#305;rmak i&#231;in -Y- veya -y- olarak giri&#351; yap&#305;n&#305;z.&quot;" newline="True"/>
+                                        <input variable="secim"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
