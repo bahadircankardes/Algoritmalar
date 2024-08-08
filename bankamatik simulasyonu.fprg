@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="bahadircankardes"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-07 02:18:02 &#214;S"/>
+        <attribute name="saved" value="2024-08-08 07:20:08 &#214;S"/>
         <attribute name="created" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNzswMTo0MTo1MSDDllM7NDA5MA=="/>
-        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wNzswMjoxODowMiDDllM7MTs0MTk5"/>
+        <attribute name="edited" value="YmFoYWRpcmNhbmthcmRlcztCQUhBRFItTUFDQk9PSy07MjAyNC0wOC0wODswNzoyMDowOCDDllM7Mjs0MjA1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,6 +14,8 @@
             <declare name="bakiye, yat&#305;r&#305;lacak, cekilecek" type="Real" array="False" size=""/>
             <declare name="secim" type="String" array="False" size=""/>
             <assign variable="bakiye" expression="1000"/>
+            <output expression="&quot;************CanDeniz Bank'a Ho&#351; Geldiniz************&quot;" newline="True"/>
+            <output expression="&quot;Mevcut Bakiyeniz:&quot;&amp;bakiye" newline="True"/>
             <do expression="secim=&quot;Y&quot; || secim=&quot;y&quot; ||secim=&quot;C&quot;|| secim= &quot;c&quot;">
                 <output expression="&quot;Para Yat&#305;rmak i&#231;in -Y- veya -y-, para &#231;ekmek i&#231;in -C- veya -c- se&#231;imini yap&#305;n&#305;z.--C&#305;k&#305;s i&#231;in --E-- veya -e- giriniz&quot;" newline="True"/>
                 <input variable="secim"/>
